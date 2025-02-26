@@ -96,7 +96,7 @@ FInputActionValue UCTRLInputModifierDeadZone::ModifyRaw_Implementation(UEnhanced
 	// ensure(Settings);
 	//
 	// float LowerThreshold =
-	// 	(DeadzoneStick == EDeadzoneStick::MoveStick) ? Settings->GetGamepadMoveStickDeadZone() : Settings->GetGamepadLookStickDeadZone();
+	// 	(DeadzoneStick == ECTRLDeadzoneStick::MoveStick) ? Settings->GetGamepadMoveStickDeadZone() : Settings->GetGamepadLookStickDeadZone();
 	//
 	// LowerThreshold = FMath::Clamp(LowerThreshold, 0.0f, 1.0f);
 	//

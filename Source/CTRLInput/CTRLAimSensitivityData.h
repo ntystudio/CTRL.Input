@@ -28,7 +28,7 @@ enum class ECTRLGamepadSensitivity : uint8
 class UObject;
 
 /** Defines a set of gamepad sensitivity to a float value. */
-UCLASS(BlueprintType, Const, Meta = (DisplayName = "CTRL Aim Sensitivity Data", ShortTooltip = "Data asset used to define a map of Gamepad Sensitivty to a float value."))
+UCLASS(BlueprintType, Const, Meta = (DisplayName = "Aim Sensitivity Data [CTRL]", ShortTooltip = "Data asset used to define a map of Gamepad Sensitivty to a float value."))
 class CTRLINPUT_API UCTRLAimSensitivityData : public UPrimaryDataAsset
 {
 	GENERATED_BODY()

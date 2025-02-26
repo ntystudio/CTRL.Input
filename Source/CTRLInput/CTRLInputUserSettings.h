@@ -13,7 +13,7 @@
  * This will be serialized out at the same time as the CTRL Shared Settings and is
  * compatible with cloud saves through by calling the "Serialize" function.
  */
-UCLASS()
+UCLASS(DisplayName="Input User Settings [CTRL]")
 class CTRLINPUT_API UCTRLInputUserSettings : public UEnhancedInputUserSettings
 {
 	GENERATED_BODY()
@@ -39,7 +39,7 @@ public:
  * This is where you could place additional metadata that may be used by your settings UI,
  * input triggers, or other places where you want to know about a key setting.
  */
-UCLASS()
+UCLASS(DisplayName="Player Mappable Key Settings [CTRL]")
 class CTRLINPUT_API UCTRLPlayerMappableKeySettings : public UPlayerMappableKeySettings
 {
 	GENERATED_BODY()

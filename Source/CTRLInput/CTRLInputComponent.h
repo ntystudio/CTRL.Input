@@ -16,7 +16,7 @@ class UObject;
  *
  *	Component used to manage input mappings and bindings using an input config data asset.
  */
-UCLASS(BlueprintType, Config = Input)
+UCLASS(BlueprintType, Config = Input, DisplayName="Input Component [CTRL]")
 class CTRLINPUT_API UCTRLInputComponent : public UEnhancedInputComponent
 {
 	GENERATED_BODY()

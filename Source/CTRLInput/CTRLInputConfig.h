@@ -17,7 +17,7 @@ struct FFrame;
  *
  *	Struct used to map an input action to a gameplay input tag.
  */
-USTRUCT(BlueprintType)
+USTRUCT(BlueprintType, DisplayName="Input Action [CTRL]")
 struct FCTRLInputAction
 {
 	GENERATED_BODY()
@@ -36,7 +36,7 @@ public:
  *
  *	Non-mutable data asset that contains input configuration properties.
  */
-UCLASS(BlueprintType, Const)
+UCLASS(BlueprintType, Const, DisplayName="Input Config Data [CTRL]")
 class CTRLINPUT_API UCTRLInputConfig : public UDataAsset
 {
 	GENERATED_BODY()

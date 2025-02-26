@@ -6,7 +6,7 @@
 
 #include "CTRLPlayerMappableKeyProfile.generated.h"
 
-UCLASS()
+UCLASS(DisplayName="Player Mappable Key Profile [CTRL]")
 class CTRLINPUT_API UCTRLPlayerMappableKeyProfile : public UEnhancedPlayerMappableKeyProfile
 {
 	GENERATED_BODY()

@@ -12,7 +12,7 @@
 class UInputComponent;
 class APlayerController;
 
-UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
+UCLASS(ClassGroup=(Input), DisplayName="Input Setup Component [CTRL]", meta=(BlueprintSpawnableComponent))
 class CTRLINPUT_API UCTRLInputSetupComponent : public UActorComponent
 {
 	GENERATED_BODY()

@@ -18,7 +18,7 @@ class UObject;
 /** 
 *  Scales input based on a double property in the SharedUserSettings
 */
-UCLASS(NotBlueprintable, MinimalAPI, meta = (DisplayName = "Setting Based Scalar"))
+UCLASS(NotBlueprintable, meta = (DisplayName = "Setting Based Scalar"))
 class CTRLINPUT_API UCTRLSettingBasedScalar : public UInputModifier
 {
 	GENERATED_BODY()

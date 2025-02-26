@@ -37,7 +37,7 @@ public:
  *	Non-mutable data asset that contains input configuration properties.
  */
 UCLASS(BlueprintType, Const)
-class UCTRLInputConfig : public UDataAsset
+class CTRLINPUT_API UCTRLInputConfig : public UDataAsset
 {
 	GENERATED_BODY()
 

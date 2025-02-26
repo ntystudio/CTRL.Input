@@ -19,7 +19,7 @@ class UObject;
 *  Scales input based on a double property in the SharedUserSettings
 */
 UCLASS(NotBlueprintable, MinimalAPI, meta = (DisplayName = "Setting Based Scalar"))
-class UCTRLSettingBasedScalar : public UInputModifier
+class CTRLINPUT_API UCTRLSettingBasedScalar : public UInputModifier
 {
 	GENERATED_BODY()
 
@@ -66,8 +66,8 @@ enum class EDeadzoneStick : uint8
 /**
  * This is a deadzone input modifier that will have it's thresholds driven by what is in the CTRL Shared game settings. 
  */
-UCLASS(NotBlueprintable, MinimalAPI, meta = (DisplayName = "CTRL Settings Driven Dead Zone"))
-class UCTRLInputModifierDeadZone : public UInputModifier
+UCLASS(NotBlueprintable, meta = (DisplayName = "CTRL Settings Driven Dead Zone"))
+class CTRLINPUT_API UCTRLInputModifierDeadZone : public UInputModifier
 {
 	GENERATED_BODY()
 
@@ -104,8 +104,8 @@ enum class ECTRLTargetingType : uint8
 };
 
 /** Applies a scalar modifier based on the current gamepad settings in CTRL Shared game settings.  */
-UCLASS(NotBlueprintable, MinimalAPI, meta = (DisplayName = "CTRL Gamepad Sensitivity"))
-class UCTRLInputModifierGamepadSensitivity : public UInputModifier
+UCLASS(NotBlueprintable, meta = (DisplayName = "CTRL Gamepad Sensitivity"))
+class CTRLINPUT_API UCTRLInputModifierGamepadSensitivity : public UInputModifier
 {
 	GENERATED_BODY()
 public:
@@ -123,8 +123,8 @@ protected:
 };
 
 /** Applies an inversion of axis values based on a setting in the CTRL Shared game settings */
-UCLASS(NotBlueprintable, MinimalAPI, meta = (DisplayName = "CTRL Aim Inversion Setting"))
-class UCTRLInputModifierAimInversion : public UInputModifier
+UCLASS(NotBlueprintable, meta = (DisplayName = "CTRL Aim Inversion Setting"))
+class CTRLINPUT_API UCTRLInputModifierAimInversion : public UInputModifier
 {
 	GENERATED_BODY()
 	

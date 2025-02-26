@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "EnhancedInputComponent.h"
 #include "CTRLInputConfig.h"
+#include "EnhancedInputComponent.h"
 #include "CTRLInputComponent.generated.h"
 
 class UEnhancedInputLocalPlayerSubsystem;
@@ -16,8 +16,8 @@ class UObject;
  *
  *	Component used to manage input mappings and bindings using an input config data asset.
  */
-UCLASS(Config = Input)
-class UCTRLInputComponent : public UEnhancedInputComponent
+UCLASS(BlueprintType, Config = Input)
+class CTRLINPUT_API UCTRLInputComponent : public UEnhancedInputComponent
 {
 	GENERATED_BODY()
 

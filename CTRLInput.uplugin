@@ -5,7 +5,7 @@
 	"FriendlyName": "CTRL.Input",
 	"Description": "General purpose Input utilities. Adapted from Lyra.",
 	"Category": "CTRL",
-	"CreatedBy": "",
+	"CreatedBy": "Tim Oxley",
 	"CreatedByURL": "https://nty.studio",
 	"DocsURL": "",
 	"MarketplaceURL": "",
@@ -23,6 +23,10 @@
 	"Plugins": [
 		{
 			"Name": "CTRLGas",
+			"Enabled": true
+		},
+		{
+			"Name": "EnhancedInput",
 			"Enabled": true
 		}
 	]

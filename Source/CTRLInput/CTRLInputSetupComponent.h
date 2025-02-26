@@ -10,6 +10,7 @@
 #include "CTRLInputSetupComponent.generated.h"
 
 class UInputComponent;
+class APlayerController;
 
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class CTRLINPUT_API UCTRLInputSetupComponent : public UActorComponent
@@ -20,7 +21,7 @@ public:
 	UCTRLInputSetupComponent();
 
 	UFUNCTION(BlueprintCallable)
-	void SetupInputComponent(UInputComponent* PlayerInputComponent);
+	void SetupInputComponent(APlayerController* PlayerController, UInputComponent* PlayerInputComponent);
 
 	UFUNCTION()
 	void OnInput_AbilityInputTagPressed(FGameplayTag InputTag);

@@ -5,7 +5,7 @@
 #include "AbilitySystemGlobals.h"
 #include "EnhancedInputSubsystems.h"
 
-#include "CTRLGas/CTRLGasComponent.h"
+#include "CTRLGas/CTRLAbilitySystemComponent.h"
 
 #include "CTRLInput/CTRLInput.h"
 #include "CTRLInput/CTRLInputComponent.h"
@@ -63,7 +63,7 @@ void UCTRLInputSetupComponent::SetupInputComponent(APlayerController* PlayerCont
 // ReSharper disable once CppMemberFunctionMayBeConst
 void UCTRLInputSetupComponent::OnInput_AbilityInputTagPressed(FGameplayTag const InputTag)
 {
-	if (auto const ASC = UCTRLGasComponent::Get(GetOwner()))
+	if (auto const ASC = UCTRLAbilitySystemComponent::Get(GetOwner()))
 	{
 		ASC->OnAbilityInputTagPressed(InputTag);
 	}
@@ -72,7 +72,7 @@ void UCTRLInputSetupComponent::OnInput_AbilityInputTagPressed(FGameplayTag const
 // ReSharper disable once CppMemberFunctionMayBeConst
 void UCTRLInputSetupComponent::OnInput_AbilityInputTagReleased(FGameplayTag const InputTag)
 {
-	if (auto const ASC = UCTRLGasComponent::Get(GetOwner()))
+	if (auto const ASC = UCTRLAbilitySystemComponent::Get(GetOwner()))
 	{
 		ASC->OnAbilityInputTagReleased(InputTag);
 	}

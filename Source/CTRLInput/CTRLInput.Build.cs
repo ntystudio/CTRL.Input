@@ -8,15 +8,15 @@ public class CTRLInput : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(
-		[
+		PublicDependencyModuleNames.AddRange(new[]
+		{
 			"Core",
 			"DeveloperSettings"
-		]);
+		});
 
 
-		PrivateDependencyModuleNames.AddRange(
-		[
+		PrivateDependencyModuleNames.AddRange(new[]
+		{
 			"CoreUObject",
 			"CTRLGas",
 			"Engine",
@@ -24,6 +24,6 @@ public class CTRLInput : ModuleRules
 			"GameplayTags",
 			"Slate",
 			"SlateCore",
-		]);
+		});
 	}
 }

@@ -64,7 +64,7 @@ void UCTRLInputSetupComponent::SetupInputComponent(APlayerController* PlayerCont
 // ReSharper disable once CppMemberFunctionMayBeConst
 void UCTRLInputSetupComponent::OnInput_AbilityInputTagPressed(FGameplayTag const InputTag)
 {
-	if (auto const ASC = UCTRLAbilitySystemComponent::Get(GetOwner()))
+	if (auto const ASC = UCTRLAbilitySystemComponent::GetASC(GetOwner()))
 	{
 		ASC->OnAbilityInputTagPressed(InputTag);
 	}
@@ -73,7 +73,7 @@ void UCTRLInputSetupComponent::OnInput_AbilityInputTagPressed(FGameplayTag const
 // ReSharper disable once CppMemberFunctionMayBeConst
 void UCTRLInputSetupComponent::OnInput_AbilityInputTagReleased(FGameplayTag const InputTag)
 {
-	if (auto const ASC = UCTRLAbilitySystemComponent::Get(GetOwner()))
+	if (auto const ASC = UCTRLAbilitySystemComponent::GetASC(GetOwner()))
 	{
 		ASC->OnAbilityInputTagReleased(InputTag);
 	}
